@@ -1,0 +1,14 @@
+#####################/etc/systemd/system
+[Unit]
+Description=Route53 Set And Timer
+After=network-online.target
+
+[Service]
+ExecStart=/bin/bash /home/ubuntu/route/route.sh
+WorkingDirectory=/home/ubuntu/route
+Type=oneshot
+User=ubuntu
+Group=ubuntu
+
+[Install]
+WantedBy=multi-user.target
