@@ -1,9 +1,9 @@
 #!bin/bash
 
-DOMAIN_NAME="xianglishan.com"
-SUB_NAME="server"
+DOMAIN_NAME="**************.com"
+SUB_NAME="*****"
 IP_ADDRESS=`curl -s inet-ip.info`
-HOSTED_ZONE_ID="Z043221734MPT5KLLXRG6"
+HOSTED_ZONE_ID="**************"
 
 BATCH_JSON='{
         "Comment":"UPSERT arecort",
